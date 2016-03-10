@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{ title }}</title>
+</head>
+<body>
+	<h1>{{ title }}</h1>
+
+	{#
+	Recorre el array y muestra la lista de valores con loop
+	Puedes hacer uso de loop.first y loop.last
+	#}
+
+	<p>for:</p>
+ 	<ol>
+	{% for n in nombres %}
+		<li>{{ n }}</li>
+	{% endfor %}
+	</ol>
+
+</body>
+</html>

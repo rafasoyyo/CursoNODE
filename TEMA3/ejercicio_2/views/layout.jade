@@ -1,0 +1,39 @@
+doctype html
+html(lang='es')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initialscale=1.0')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title Imagina ToDo
+        //- Bootstrap core CSS
+        link(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet')
+        script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+        //- Bootstrap Javascript
+        script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    body
+        .navbar.navbar-inverse
+            .container
+                .navbar-header
+                    button.navbar-toggle(type='button', datatoggle='collapse', data-target='.navbar-collapse')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='#') Imagina ToDo
+                .collapse.navbar-collapse
+                    .pull-right
+                        ul.nav.navbar-nav
+                            li
+                                a(href='/about') añadir
+                            li
+                                a(href='/about') buscar
+                            li
+                                a(href='/about') finalizadas
+                            li
+                                a(href='/about') descendente
+                            li
+                                a(href='/about') ascendente
+                            li
+                                a(href='/contact') user
+        .container
+            block content

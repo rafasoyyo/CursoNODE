@@ -1,0 +1,9 @@
+extends layout
+
+block content	
+	.jumbotron
+		h2 Welcome to #{title}
+
+	ol.list-group
+		for n in nombres
+			li.list-group-item #{n} 
