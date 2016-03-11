@@ -1,0 +1,845 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"secu",
+				"secuencias"
+			],
+			[
+				"uploa",
+				"upload_modal"
+			],
+			[
+				"ng",
+				"ng-class"
+			],
+			[
+				"input",
+				"input_type"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"ng-",
+				"ng-click"
+			],
+			[
+				"login",
+				"login_box"
+			],
+			[
+				"cons",
+				"console.log"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"di",
+				"digest	\\$digest"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"root",
+				"rootScope	\\$rootScope"
+			],
+			[
+				"lo",
+				"locale	\\$locale"
+			],
+			[
+				"enc",
+				"encryption"
+			],
+			[
+				"encr",
+				"encrypt"
+			],
+			[
+				"bio",
+				"biomarkers"
+			],
+			[
+				"idento",
+				"identificator"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"Quibim",
+				"Quibim-Precision"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"imae",
+				"images"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"pos",
+				"POST"
+			],
+			[
+				"DELETE",
+				"delete"
+			],
+			[
+				"state",
+				"stateParams"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"wi",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 129.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 637.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/CursoNODE"
+	],
+	"file_history":
+	[
+		"/D/Precision/Frontend/sources/lib/reader_worker.coffee",
+		"/D/Precision/Frontend/sources/lib/anonymizer_worker.coffee",
+		"/D/Precision/Frontend/sources/angular/controllers/study-ctrl.coffee",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/config.xml",
+		"/D/Precision/Frontend/sources/script/textos.coffee",
+		"/D/Precision/Frontend/sources/angular/controllers/users-ctrl.coffee",
+		"/D/Precision/Frontend/sources/angular/app.coffee",
+		"/D/Precision/Frontend/sources/angular/controllers/main-crtl.coffee",
+		"/D/Precision/Frontend/sources/templates/components/add_study_modal.jade",
+		"/D/Precision/Frontend/sources/demo/coffee/app.coffee",
+		"/D/Precision/Frontend/sources/script/aafile_manage.coffee",
+		"/D/Precision/Frontend/sources/index.jade",
+		"/D/Precision/Frontend/sources/less/components/modals.less",
+		"/D/Precision/Frontend/sources/angular/controllers/studies-ctrl.coffee",
+		"/D/Precision/Frontend/sources/angular/factory/factory.coffee",
+		"/D/Precision/Frontend/sources/login/coffee/login.coffee",
+		"/D/Precision/Frontend/sources/lib/unzipper_worker.coffee",
+		"/D/Precision/Frontend/sources/lib/viewer.coffee",
+		"/D/Precision/Frontend/sources/lib/zipper.coffee",
+		"/D/Precision/Frontend/sources/login/templates/login.jade",
+		"/D/Precision/Frontend/sources/angular/controllers/header-crtl.coffee",
+		"/D/Precision/Frontend/sources/demo/coffee/factory.coffee",
+		"/D/Precision/Frontend/sources/login/templates/login_form.jade",
+		"/D/Precision/Frontend/sources/less/quibim_login.less",
+		"/D/Precision/Frontend/sources/templates/components/start_tour_modal.jade",
+		"/D/Precision/Frontend/sources/templates/components/demo_register_modal.jade",
+		"/C/Users/Rafael/Desktop/config.xml",
+		"/D/Precision/Frontend/sources/templates/users.jade",
+		"/D/Precision/Frontend/sources/script/biomarcadores.coffee",
+		"/D/quibim/precision.quibim.com_private_key2.key",
+		"/D/Precision/Frontend/sources/templates/studies.jade",
+		"/D/Precision/Frontend/sources/angular/filters/text-filter.coffee",
+		"/D/1and1.txt",
+		"/D/Precision/Frontend/sources/templates/components/header.jade",
+		"/D/Precision/Frontend/sources/angular/controllers/handmadereport_Ctrl.coffee",
+		"/D/Precision/Frontend/sources/templates/admin_studies.jade",
+		"/D/Precision/Frontend/sources/angular/controllers/admin_users-ctrl.coffee",
+		"/D/Precision/Frontend/sources/angular/controllers/admin_studies-ctrl.coffee",
+		"/D/Precision/Frontend/sources/templates/handmade_report.jade",
+		"/D/Precision/Frontend/sources/login/index.jade",
+		"/D/Precision/gulpfile.js",
+		"/D/Precision/Backend/biomarkerRestFul/src/ws/ProcessingRestFul.java",
+		"/C/Users/Rafael/OneDrive/QUIBIM/Clientes/VallHebron/HUVH_Empresas_externas.pcf",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/templates/users.html",
+		"/D/uploadResultsStudies/uploadResultsStudies/config/config.xml",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/templates/results.html",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/templates/report.html",
+		"/D/Precision/Frontend/sources/templates/report.jade",
+		"/D/Precision/Frontend/sources/less/components/header.less",
+		"/D/Precision/Frontend/sources/templates/components/biomarker_info_modal.jade",
+		"/D/Precision/Frontend/sources/angular/controllers/biomarkers-ctrl.coffee",
+		"/D/CursoNODE/TEMA1/operaciones.js",
+		"/D/Precision/Frontend/sources/templates/results.jade",
+		"/D/CursoNODE/TEMA1/server.js",
+		"/D/Precision/Frontend/sources/angular/controllers/results-ctrl.coffee",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/templates/mail/autorized_user_template.html",
+		"/D/Precision/Frontend/sources/less/components/texts.less",
+		"/D/CursoNODE/TEMA1/index.html",
+		"/D/Precision/Frontend/sources/angular/controllers/UNUSED/studies-ctrl.coffeee",
+		"/D/Precision/Frontend/sources/less/global/variables.less",
+		"/D/Precision/Frontend/sources/less/bootstrap/mixins/vendor-prefixes.less",
+		"/D/Precision/Frontend/sources/terms.txt",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/viewer/gui/filter.js",
+		"/D/Precision/Frontend/sources/less/components/paddings.less",
+		"/D/Pruebas/3D/sources/less/style.less",
+		"/D/Pruebas/3D/sources/less/bootstrap/mixins/background-variant.less",
+		"/D/Pruebas/3D/sources/less/global/global.less",
+		"/D/Pruebas/3D/public/stylesheets/style.css",
+		"/D/Pruebas/3D/gulpfile.js",
+		"/D/Pruebas/3D/sources/less/bootstrap/bootstrap.less",
+		"/D/Precision/Frontend/sources/less/quibim_style.less",
+		"/D/Pruebas/3D/package.json",
+		"/C/Users/Rafael/AppData/Local/Temp/Rar$DIa0.194/bs-commonjs-generator.js",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/demo/js/angular_scripts.js",
+		"/D/Precision/Frontend/sources/demo/coffee/tour.coffee",
+		"/D/Precision/Frontend/sources/angular/controllers/report-ctrl.coffee",
+		"/D/Precision/Frontend/sources/less/global/mixins.less",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/templates/mail/welcome_user_template.html",
+		"/D/Precision/Backend/biomarkerRestFul/src/util/SendMail.java",
+		"/D/Precision/Backend/biomarkerRestFul/src/ws/UserRestFul.java",
+		"/D/Precision/mailing/Authorization User.html",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/login/index.html",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/demo/index.html",
+		"/C/Users/Rafael/Desktop/results.json",
+		"/D/biomarcadores/quidBone 3D/quidBone 3D/result.xml",
+		"/C/Users/Rafael/Desktop/notes.txt",
+		"/C/Users/Rafael/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/D/biomarcadores/quidLiver-e/xml_biomarker_web_quidLiver-e.xml",
+		"/D/Precision/Backend/biomarkerRestFul/src/json/out/ResultRowJsonOut.java",
+		"/D/Precision/Backend/biomarkerRestFul/src/model/ResultModel.java",
+		"/D/Precision/Frontend/sources/less/components/tables.less",
+		"/D/Precision/Frontend/sources/templates/biomarkers_create.jade",
+		"/D/Precision/Backend/biomarkerRestFul/src/ws/ComunicationRestFul.java",
+		"/D/Precision/Backend/biomarkerRestFul/src/ws/StudyRestFul.java",
+		"/D/Precision/Frontend/sources/less/global/global.less",
+		"/D/Precision/Backend/biomarkerRestFul/src/MessagesBundle.properties",
+		"/D/Precision/Backend/biomarkerRestFul/src/MessagesBundle_es_ES.properties",
+		"/D/Precision/Frontend/sources/angular/controllers/viewer-header-ctrl.coffee",
+		"/D/Precision/Frontend/sources/templates/components/result_table.jade",
+		"/D/Precision/mailing/Welcome user template.html",
+		"/D/Precision/Frontend/sources/less/components/alerts.less",
+		"/D/Precision/Frontend/sources/script/o_textos.coffeee",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/js/quibim_scripts.js",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/demo/js/angular_scripts-min.js",
+		"/C/Users/Rafael/Desktop/login.coffee",
+		"/C/Users/Rafael/Desktop/tour.coffee",
+		"/C/Users/Rafael/Desktop/textos.coffee",
+		"/D/handmade/La Princesa Resultados Plataforma/La Princesa Resultados Plataforma/report.xml",
+		"/D/handmade/La Princesa Resultados Plataforma/La Princesa Resultados Plataforma/result.xml",
+		"/D/Precision/Frontend/sources/less/pages/report.less",
+		"/D/uploadResultsStudies/uploadResultsStudies/UploadStudy.jar",
+		"/D/Precision/Frontend/sources/templates/not_found.jade",
+		"/C/Users/Rafael/Desktop/index.html",
+		"/C/Users/Rafael/Desktop/angular_scripts.js",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/index.html",
+		"/D/Precision/Frontend/sources/templates/study.jade",
+		"/D/Precision/node_modules/gulp-coffee/test/main.js",
+		"/D/Precision/Backend/biomarkerRestFul/WebContent/js/angular_scripts.js",
+		"/D/handmade/report.xml",
+		"/D/Precision/Frontend/sources/templates/components/delete_user_modal.jade",
+		"/D/Precision/Frontend/sources/templates/components/delete_study_modal.jade",
+		"/D/handmade/La Princesa Resultados Plataforma/La Princesa Resultados Plataforma/xml_biomarker_web_quidBone2D.xml",
+		"/D/Precision/Frontend/sources/angular/controllers/billing-ctrl.coffee",
+		"/D/Precision/Frontend/sources/script/unused/biomarcadores.coffeee",
+		"/D/docs/example1/xml_biomarker.xml",
+		"/D/handmade/La Princesa Resultados Plataforma/result.xml",
+		"/D/Precision/Frontend/sources/less/pages/biomarkers_create.less",
+		"/D/Precision/Frontend/sources/templates/viewer.jade"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+			"D:\\Precision\\Frontend\\sources\\less\\components",
+			"D:\\Precision\\Frontend\\sources\\less\\global",
+			"D:\\Precision\\Frontend\\sources\\less\\components",
+			"D:\\Precision\\Frontend\\sources",
+			"D:\\Precision\\Frontend\\sources\\less\\bootstrap",
+			"D:\\Precision\\Backend",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\src\\ws",
+			"D:\\Precision\\Frontend\\sources",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\src\\ws",
+			"D:\\Precision\\Backend\\biomarkerRestFul",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\src\\ws",
+			"D:\\Precision\\Backend",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\WebContent",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\src\\ws",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\WebContent",
+			"D:\\Precision\\Frontend\\sources",
+			"D:\\Precision\\Backend",
+			"D:\\Precision",
+			"D:\\Precision\\Backend\\",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\src\\ws",
+			"D:\\Precision\\Frontend\\sources",
+			"D:\\Precision\\sources",
+			"D:\\Precision\\dwv\\ext",
+			"D:\\Precision\\Frontend\\sources",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\src\\ws",
+			"D:\\Precision\\Frontend\\sources",
+			"D:\\Precision",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\src\\ws",
+			"D:\\Precision\\Frontend\\sources",
+			"D:\\Precision\\",
+			"D:\\Precision\\Backend\\biomarkerRestFul\\src\\ws",
+			"D:\\Precision\\Frontend\\sources\\",
+			"D:\\Precision\\Frontend\\sources\\less",
+			"D:\\Precision\\Frontend\\sources",
+			"D:\\Precision\\Frontend\\sources\\templates",
+			"D:\\Precision\\Frontend\\sources"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"error",
+			"set_",
+			"conso",
+			"compress",
+			"poin",
+			"pointer",
+			"upload",
+			"set_step",
+			"total_files",
+			"postMessage",
+			"array",
+			"as",
+			"read",
+			"save",
+			"http://precision.quibim.com",
+			"http://precision.quibim.com/login/",
+			" http://precision.quibim.com/login/",
+			"http:",
+			"http",
+			"coo",
+			"RM_EGT2_ME",
+			"datos",
+			"users",
+			"QPname",
+			"usuario'",
+			"usuarios'",
+			"usuar",
+			"Ctrl",
+			"unique",
+			"quid",
+			"TbTh",
+			"quid",
+			"delay",
+			"findall",
+			"setup",
+			")\n",
+			"structureJson.setData",
+			"refresh_users",
+			"localeCompare",
+			"QB_js",
+			"3D",
+			"sendCreateCloudTemplate",
+			"upload_storage",
+			"list",
+			"sma",
+			"new",
+			"cere",
+			"\\\"",
+			"if",
+			"sendMail",
+			"findby",
+			"3d",
+			"patientIdentificator",
+			"listResultRowJsonOut",
+			"SendMail.",
+			"SendMail-",
+			"SendMail()",
+			"sendMail.",
+			"SendMail()",
+			"mail",
+			"ç",
+			"mail",
+			"Reciba un cordial cordial saludo",
+			"url_password",
+			"biomarker",
+			"code",
+			".alert-dismissible",
+			"aña",
+			"Quibim-Precision guided tour",
+			"tour",
+			"invali",
+			"stateParams",
+			"'",
+			"alert",
+			"25%",
+			"root",
+			"set_region",
+			"sequences_fail",
+			"sequence_fail",
+			"communication",
+			"msg:",
+			"{msg:",
+			"save_secuence",
+			"Unable to delete",
+			"delete",
+			"Unable",
+			"entre",
+			"state",
+			"bioma",
+			"process",
+			"@size",
+			"plus",
+			"plud",
+			"report_pag",
+			"report_page",
+			"create",
+			"white",
+			"lst",
+			"field",
+			"data",
+			"xmlDropped",
+			"drop",
+			"biomarkers_create",
+			"biomarkers_create ",
+			"$filter",
+			"left_bar",
+			"left_bar ",
+			"communication",
+			"facto",
+			"position",
+			"sock",
+			"pt\" sr",
+			"></script>",
+			"<script ",
+			".js.js",
+			"sjcl.json.",
+			"sjcl.json.de",
+			"sjcl.json",
+			"dist_route",
+			"ref_route",
+			"sjcl.json",
+			"ks\"",
+			"ks",
+			"file_big",
+			"file_repeat",
+			"add",
+			"ecry",
+			"minim"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"RM_EG_T2_ME",
+			"\"",
+			"pt\", sr",
+			")",
+			"script(",
+			".js",
+			"es",
+			"en",
+			"}",
+			"{",
+			"nick())",
+			"QPname.locale",
+			"listRegionJsonOut.identificator.toLowerCase()",
+			"(bm.listRegionJsonOut.identificator).toLowerCase()",
+			"RESULTADOS"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "NodeQuibim.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"aaf",
+				"sources\\script\\aafile_manage.coffee"
+			],
+			[
+				"app",
+				"sources\\angular\\app.coffee"
+			],
+			[
+				"conf",
+				"Precision\\Backend\\biomarkerRestFul\\WebContent\\config.xml"
+			],
+			[
+				"text",
+				"sources\\script\\textos.coffee"
+			],
+			[
+				"modal",
+				"sources\\less\\components\\modals.less"
+			],
+			[
+				"aa",
+				"sources\\script\\aafile_manage.coffee"
+			],
+			[
+				"login",
+				"sources\\login\\coffee\\login.coffee"
+			],
+			[
+				"con",
+				"WebContent\\config.xml"
+			],
+			[
+				"tex",
+				"sources\\script\\textos.coffee"
+			],
+			[
+				"biom",
+				"sources\\script\\biomarcadores.coffee"
+			],
+			[
+				"gulp",
+				"Precision\\gulpfile.js"
+			],
+			[
+				"fact",
+				"sources\\angular\\factory\\factory.coffee"
+			],
+			[
+				"studi",
+				"sources\\angular\\controllers\\UNUSED\\studies-ctrl.coffeee"
+			],
+			[
+				"filter",
+				"sources\\angular\\filters\\text-filter.coffee"
+			],
+			[
+				"main",
+				"Precision\\Frontend\\sources\\angular\\controllers\\main-crtl.coffee"
+			],
+			[
+				"bioma",
+				"sources\\script\\biomarcadores.coffee"
+			],
+			[
+				"viewer",
+				"sources\\angular\\controllers\\viewer-header-ctrl.coffee"
+			],
+			[
+				"",
+				"Precision\\Frontend\\sources\\demo\\coffee\\factory.coffee"
+			],
+			[
+				"report",
+				"Precision\\Frontend\\sources\\templates\\report.jade"
+			],
+			[
+				"tour",
+				"sources\\demo\\coffee\\tour.coffee"
+			],
+			[
+				"hand",
+				"sources\\angular\\controllers\\handmadereport_Ctrl.coffee"
+			],
+			[
+				"repo",
+				"sources\\templates\\report.jade"
+			],
+			[
+				"varia",
+				"sources\\less\\global\\variables.less"
+			],
+			[
+				"stud",
+				"sources\\templates\\study.jade"
+			],
+			[
+				"te",
+				"sources\\script\\textos.coffee"
+			],
+			[
+				"unz",
+				"sources\\lib\\unzipper_worker.coffee"
+			],
+			[
+				"index",
+				"sources\\login\\index.jade"
+			],
+			[
+				"study",
+				"sources\\templates\\study.jade"
+			],
+			[
+				"mian",
+				"sources\\angular\\controllers\\main-crtl.coffee"
+			],
+			[
+				"index.j",
+				"sources\\demo\\index.jade"
+			],
+			[
+				"inde",
+				"sources\\login\\index.jade"
+			],
+			[
+				"ind",
+				"sources\\index.jade"
+			],
+			[
+				"gul",
+				"Precision\\gulpfile.js"
+			],
+			[
+				"packa",
+				"Precision\\package.json"
+			],
+			[
+				"stu",
+				"sources\\angular\\controllers\\study-ctrl.coffee"
+			],
+			[
+				"header",
+				"sources\\angular\\controllers\\header-crtl.coffee"
+			],
+			[
+				"lo",
+				"sources\\login\\coffee\\login.coffee"
+			],
+			[
+				"factory",
+				"sources\\angular\\factory\\factory.coffee"
+			],
+			[
+				"user",
+				"sources\\templates\\users.jade"
+			],
+			[
+				"user-c",
+				"sources\\angular\\controllers\\users-ctrl.coffee"
+			],
+			[
+				"mix",
+				"Precision\\Frontend\\sources\\less\\global\\mixins.less"
+			],
+			[
+				"form",
+				"sources\\less\\components\\forms.less"
+			],
+			[
+				"sett",
+				"sources\\angular\\controllers\\settings-ctrl.coffee"
+			],
+			[
+				"cong",
+				"WebContent\\config.xml"
+			],
+			[
+				"config",
+				"Precision\\Backend\\biomarkerRestFul\\WebContent\\config.xml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Pruebas\\nodequibim\\nodequibim.sublime-project"
+			]
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 426.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
