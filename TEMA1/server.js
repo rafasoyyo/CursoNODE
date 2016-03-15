@@ -22,7 +22,7 @@ var server = http.createServer(function (peticion, respuesta){
     var num1 = url.parse(peticion.url, true).query.numero1;
     var num2 = url.parse(peticion.url, true).query.numero2;
 
-    p = pathname.replace(/\//, "")
+    p = pathname.replace(/\//, "");
 
     if(operaciones[p]){
         var result = operaciones[p](num1, num2)
