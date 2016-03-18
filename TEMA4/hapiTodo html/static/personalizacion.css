@@ -1,0 +1,71 @@
+.mac-style{
+  -webkit-transition: width  1s ease-in-out;
+  -moz-transition: width  1s ease-in-out;
+  -o-transition: width  1s ease-in-out;
+  transition: width  1s ease-in-out;
+  width: 200px;
+
+}
+.mac-style:focus{
+  width: 500px;
+}
+
+[class^="fa"], [class*=" fa-"] {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color:#92ba00;
+}
+
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 8em !important; color:#92ba00;}
+.col-lg-4 i {display:block;text-align:center}
+
+/* http://blog.koalite.com/bbg */
+.btn-imagina {
+  color: #FFFFFF;
+  background-color: #92BA00;
+  border-color: #789900;
+}
+.btn-imagina:hover,
+.btn-imagina:focus,
+.btn-imagina:active,
+.btn-imagina.active,
+.open .dropdown-toggle.btn-imagina {
+  color: #FFFFFF;
+  background-color: #9AC401;
+  border-color: #789900;
+}
+.btn-imagina:active,
+.btn-imagina.active,
+.open .dropdown-toggle.btn-imagina {
+  background-image: none;
+}
+.btn-imagina.disabled,
+.btn-imagina[disabled],
+fieldset[disabled] .btn-imagina,
+.btn-imagina.disabled:hover,
+.btn-imagina[disabled]:hover,
+fieldset[disabled] .btn-imagina:hover,
+.btn-imagina.disabled:focus,
+.btn-imagina[disabled]:focus,
+fieldset[disabled] .btn-imagina:focus,
+.btn-imagina.disabled:active,
+.btn-imagina[disabled]:active,
+fieldset[disabled] .btn-imagina:active,
+.btn-imagina.disabled.active,
+.btn-imagina[disabled].active,
+fieldset[disabled] .btn-imagina.active {
+  background-color: #92BA00;
+  border-color: #789900;
+}
+.btn-imagina .badge {
+  color: #92BA00;
+  background-color: #FFFFFF;
+}
+.card-columns {
+  column-count:2;
+  -moz-column-count:2;
+  -moz-column-gap: 1.25rem;
+  -webkit-column-count: 2;
+}
