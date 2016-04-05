@@ -68,7 +68,7 @@ describe("Ejemplo de test",function(){
 
 	it("creamos ToDo, lo editamos y lo borramos",function(done){
 		var tarea = new ToDo({
-			'titulo': 'mocha test put',
+			'titulo': 'Para borrar',
 			'completa': 0
 		});
 
