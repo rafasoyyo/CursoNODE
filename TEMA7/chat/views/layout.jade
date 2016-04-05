@@ -101,7 +101,7 @@ html
 					socket = io()
 
 					if person != null
-						socket.emit('new user', {nick : person});
+						socket.emit('new user', {nick : person})
 
 					cont = 0
 					fnick = $('#nick')
@@ -111,15 +111,15 @@ html
 					frmessage = $('#m_private')
 
 					$('form#form').submit ->
-						socket.emit('chat message', {nick : person, message : fmessage.val()});
-						fmessage.val('');
-						return false;
+						socket.emit('chat message', {nick : person, message : fmessage.val()})
+						fmessage.val('')
+						return false
 
 					socket.on 'chat message', (msg)->
-						$('#messages').append($('<li>').append('<b>'+msg.nick+'</b>: ' + msg.message));
+						$('#messages').append($('<li>').append('<b>'+msg.nick+'</b>: ' + msg.message))
 
 					socket.on 'chat users', (msg)->
-						$('#num').text("Usuarios conectados: "+ msg);
+						$('#num').text("Usuarios conectados: "+ msg)
 
 					socket.on 'user added', (users)->
 						console.log users
@@ -138,12 +138,12 @@ html
 					$('form#_private').submit ->
 						console.log friend
 						if friend is undefined then return alert 'No tienes amigos? :('
-						socket.emit('chat friend', {emiter : person, message : frmessage.val(), receiver: friend});
-						frmessage.val('');
-						return false;
+						socket.emit('chat friend', {emiter : person, message : frmessage.val(), receiver: friend})
+						frmessage.val('')
+						return false
 
 					socket.on 'chat friend', (data)->
 						console.log data
 						if not friend then friend = data.emiter
 						$('#privatechat').children('p').text('Chat privado entre ' + friend  + ' y ' +  person)
-						$('#messages_private').append($('<li>').append('<b>'+data.emiter+'</b>: ' + data.msg));
+						$('#messages_private').append($('<li>').append('<b>'+data.emiter+'</b>: ' + data.msg))
