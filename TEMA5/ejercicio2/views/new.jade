@@ -1,0 +1,156 @@
+extends layout
+
+block append pageStyles
+  style(type='text/css').
+    .mac-style{
+      -webkit-transition: width  1s ease-in-out;
+      -moz-transition: width  1s ease-in-out;
+      -o-transition: width  1s ease-in-out;
+      transition: width  1s ease-in-out;
+      width: 200px;
+    }
+    .mac-style:focus{
+      width: 500px;
+    }
+    [class^="fa"], [class*=" fa-"] {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      color:#92ba00;
+    }
+    a.btn i{
+      color:white;padding-right: 16px;
+    }
+    .gi-4x{font-size: 4em;}
+    .gi-5x{font-size: 8em; color:#92ba00;}
+    .col-lg-4 i {display:block;text-align:center}
+    /* http://blog.koalite.com/bbg */
+    .btn-imagina {
+      color: #FFFFFF;
+      background-color: #92BA00;
+      border-color: #789900;
+    }
+    .btn-imagina:hover,
+    .btn-imagina:focus,
+    .btn-imagina:active,
+    .btn-imagina.active,
+    .open .dropdown-toggle.btn-imagina {
+      color: #FFFFFF;
+      background-color: #9AC401;
+      border-color: #789900;
+    }
+    .btn-imagina:active,
+    .btn-imagina.active,
+    .open .dropdown-toggle.btn-imagina {
+      background-image: none;
+    }
+    .btn-imagina.disabled,
+    .btn-imagina[disabled],
+    fieldset[disabled] .btn-imagina,
+    .btn-imagina.disabled:hover,
+    .btn-imagina[disabled]:hover,
+    fieldset[disabled] .btn-imagina:hover,
+    .btn-imagina.disabled:focus,
+    .btn-imagina[disabled]:focus,
+    fieldset[disabled] .btn-imagina:focus,
+    .btn-imagina.disabled:active,
+    .btn-imagina[disabled]:active,
+    fieldset[disabled] .btn-imagina:active,
+    .btn-imagina.disabled.active,
+    .btn-imagina[disabled].active,
+    fieldset[disabled] .btn-imagina.active {
+      background-color: #92BA00;
+      border-color: #789900;
+    }
+    .btn-imagina .badge {
+      color: #92BA00;
+      background-color: #FFFFFF;
+    }
+
+block body
+  body
+    include header
+    .container
+      .row
+        br
+        .col-sm-12
+          form.card
+            h3.card-header.card-info
+              label.sr-only(for='inputTitle') Título:
+              input#inputTitle.form-control(type='text', name="title", placeholder='Inserta título')
+            .card-block
+              label.sr-only(for='inputDescription') Description:
+              input#inputDescription.form-control(type='text', name="description", placeholder='Inserta descripción')
+              label.sr-only(for='inputTags') Tags:
+              input#inputTags.form-control(type='text', name="tags",, placeholder='etiquetas separadas por comas')
+              hr
+              label.sr-only(for='inputStatus') Select Status:
+              select#inputStatus.form-control(name="status")
+                option Selecciona estado
+                option Todo
+                option Doing
+                option Review
+                option Done
+              hr
+              .text-xs-center
+                button.btn.btn-imagina(onclick="history.go(-1)")
+                  | Volver
+                  i.fa.fa-arrow-left(style=" position: relative; color: rgb(255, 255, 255); width: 50%;")
+                #save-btn.btn.btn-imagina
+                  | Guardar
+                  i.fa.fa-floppy-o(style=" position: relative; color: rgb(255, 255, 255); width: 50%;")
+                a.btn.btn-danger(href='/')
+                  | Cancelar
+                  i.fa.fa-times(style=" position: relative; color: rgb(255, 255, 255); width: 50%;")
+        #added.col-sm-12    
+  include footer  
+
+  script.
+    $(document).ready(function(){
+
+      var $added = $('#added');
+      var $saveBtn = $('#save-btn');
+      var $form = $('form');
+
+      $saveBtn.click(function(e){
+        var pos = $.ajax({
+          url: 'http://localhost:3000/new',
+          method: "POST",
+          data: $form.serializeArray()
+        })
+        
+        pos.done(function( data ) {
+          $added.append(data)
+          $form.find('input').each(function(){
+            $(this).val(null)
+          });
+          $form.find('select').prop('selectedIndex',0);
+        });
+         
+        pos.fail(function( data ) {
+          console.log(data);
+        });
+
+      })
+
+
+      $('.container').on('click', '#delete-btn', function(){
+        var that = $(this)
+        var data = $(this).data() 
+        var del = $.ajax({
+          url: 'http://localhost:3000/edit/' + data.id,
+          method: "DELETE"
+        })
+
+        del.done(function( ) {
+          that.closest('.card').remove()
+        });
+         
+        del.fail(function( e ) {
+          alert('Error al borrar')
+        });
+
+      });
+
+
+    });

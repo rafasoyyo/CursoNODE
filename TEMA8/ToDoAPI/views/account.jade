@@ -1,0 +1,35 @@
+.container
+	.col-xs-12.col-sm-6.col-sm-offset-3.m-y-2
+		h2.form-signin-heading {{title}}
+		if (user)
+			p Estás dentro como {{user.username}}
+			a(href="/users/logout") Logout
+		else
+			form(role='form', action="/users/{{title | lowercase }}",method="post").form-signin
+				.m-y-1
+					label.sr-only(for='username') Username
+					input#username.form-control(type='text', name="username", placeholder='Introduce Username',required='', autofocus='')
+				.m-y-1
+					label.sr-only(for='password') Password
+					input#password.form-control(type='password',name="password", placeholder='Password', required='')
+				.checkbox
+					label
+						input(type='checkbox', value='remember-me')
+						| Recordar
+
+				.m-y-1(ng-if="error")
+					span(style="color:red") {{error.message}}
+				
+				.m-y-1(ng-if="flash")
+					span(style="color:red") {{flash.error}}
+
+				.col-lg-6
+					a(href='/')
+						button.btn.btn-lg.btn-secondary.btn-block(type="button") Cancelar
+				.col-lg-6
+					button.btn.btn-lg.btn-primary.btn-block(type='submit', ng-if="title === 'login' ? 'Entrar' : 'Registro' ")
+				.clearfix
+			
+			.m-y-2(ng-if="title === 'Login'")
+				p ¿Aún no se ha registrado? 
+					a(href="/users/register") Regístrate

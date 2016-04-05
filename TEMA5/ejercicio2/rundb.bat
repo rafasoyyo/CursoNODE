@@ -1,0 +1,1 @@
+C:\MongoDB\Server\3.2\bin\mongod.exe --dbpath C:\Users\Rafael\Documents\GitHub\CursoNODE\TEMA4\ejercicio2\db

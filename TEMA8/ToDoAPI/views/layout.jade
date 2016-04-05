@@ -1,0 +1,40 @@
+doctype html
+html(lang='es', ng-app="todoApp")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Imagina Api - #{title}
+    link(rel='icon', href="nodejs.png" type="image/png")
+    // Bootstrap 3.3.6 CSS
+    // <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    // Bootstrap 4.0.0-a2 CSS
+    //
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    link(rel='stylesheet', href='/static/bootstrapv4a2.css')
+    link(rel='stylesheet', href='/static/personalizacion.css')
+    // font-awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-sanitize.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js")
+    script(src="/javascripts/main.js")
+    //- script(src="")
+    //- script(src="")
+    //- script(src="")
+    //- script(src="")
+    //- script(src="")
+
+    block pageStyles
+        style(type='text/css').
+
+    body
+        ng-include(src="'/templates/header.html'")
+        div(ui-view)

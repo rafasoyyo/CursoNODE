@@ -1,0 +1,61 @@
+
+.container
+  .row
+    br
+    .col-sm-12
+      form.card(action="/edit/{{tarea._id}}", method="POST")
+        h3.card-header.card-info
+          label.sr-only(for='inputTitle') Título:
+          input#inputTitle.form-control(type='text', name="title", placeholder='{{tarea.title}}')
+        .card-block
+          label.sr-only(for='inputDescription') Description:
+          input#inputDescription.form-control(type='text', name="description", placeholder='{{tarea.description}}')
+          label.sr-only(for='inputTags') Tags:
+          input#inputTags.form-control(type='text', name="tags", placeholder='TAGS')
+          hr
+          label.sr-only(for='inputStatus') Select Status:
+          select#inputStatus.form-control(name="status")
+            option Todo
+            option Doing
+            option Review
+            option Done
+          hr
+          p.card-text Creado en: {{tarea.dateCreation}}
+          p.card-text Actualizado en: {{tarea.dateEdition}}
+          hr
+          .text-xs-center
+            a.btn.btn-imagina(href='/view/{{tarea._id}}')
+              | Volver
+              i.fa.fa-arrow-left
+            button.btn.btn-imagina(type="submit")
+              | Guardar
+              //- input.hidden
+              i.fa.fa-pencil-square-o(style=" position: relative; color: rgb(255, 255, 255); width: 50%;")
+            a#delete-btn.btn.btn-danger
+              | Eliminar
+              i.fa.fa-trash-o
+
+script.
+  $(document).ready(function(){
+
+
+    $('#delete-btn').click(function(){
+      var request = $.ajax({
+        url: 'http://localhost:3000/edit/{{tarea._id}}',
+        method: "DELETE"
+      })
+
+      request.done(function( e ) {
+        console.log(e);
+        location.href = '/list'
+      });
+       
+      request.fail(function( e ) {
+        console.log(e);
+        alert('Error al borrar')
+      });
+
+    });
+
+
+  });

@@ -1,0 +1,17 @@
+
+<div class="row"></div>
+<div class="container">
+  <div class="card-columns">
+    <div ng-repeat="tarea in tareas">
+      <div class="card">
+        <h3 class="card-header card-success">{{tarea.title}}</h3>
+        <div class="card-block">
+          <p class="card-text">{{tarea.description}}</p>
+          <div ng-repeat="TAG in tarea.tags"><a href="#" class="card-link">{{TAG}}</a></div>
+          <hr/>
+          <div class="text-xs-center"><a href="/view/{{tarea.id}}" class="btn btn-imagina">Ver <i style="color:white;padding-right:16px;" class="fa fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

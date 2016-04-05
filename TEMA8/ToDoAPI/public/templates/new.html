@@ -1,0 +1,204 @@
+
+<style type="text/css">
+  .mac-style{
+    -webkit-transition: width  1s ease-in-out;
+    -moz-transition: width  1s ease-in-out;
+    -o-transition: width  1s ease-in-out;
+    transition: width  1s ease-in-out;
+    width: 200px;
+  }
+  .mac-style:focus{
+    width: 500px;
+  }
+  [class^="fa"], [class*=" fa-"] {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color:#92ba00;
+  }
+  a.btn i{
+    color:white;padding-right: 16px;
+  }
+  .gi-4x{font-size: 4em;}
+  .gi-5x{font-size: 8em; color:#92ba00;}
+  .col-lg-4 i {display:block;text-align:center}
+  /* http://blog.koalite.com/bbg */
+  .btn-imagina {
+    color: #FFFFFF;
+    background-color: #92BA00;
+    border-color: #789900;
+  }
+  .btn-imagina:hover,
+  .btn-imagina:focus,
+  .btn-imagina:active,
+  .btn-imagina.active,
+  .open .dropdown-toggle.btn-imagina {
+    color: #FFFFFF;
+    background-color: #9AC401;
+    border-color: #789900;
+  }
+  .btn-imagina:active,
+  .btn-imagina.active,
+  .open .dropdown-toggle.btn-imagina {
+    background-image: none;
+  }
+  .btn-imagina.disabled,
+  .btn-imagina[disabled],
+  fieldset[disabled] .btn-imagina,
+  .btn-imagina.disabled:hover,
+  .btn-imagina[disabled]:hover,
+  fieldset[disabled] .btn-imagina:hover,
+  .btn-imagina.disabled:focus,
+  .btn-imagina[disabled]:focus,
+  fieldset[disabled] .btn-imagina:focus,
+  .btn-imagina.disabled:active,
+  .btn-imagina[disabled]:active,
+  fieldset[disabled] .btn-imagina:active,
+  .btn-imagina.disabled.active,
+  .btn-imagina[disabled].active,
+  fieldset[disabled] .btn-imagina.active {
+    background-color: #92BA00;
+    border-color: #789900;
+  }
+  .btn-imagina .badge {
+    color: #92BA00;
+    background-color: #FFFFFF;
+  }
+  
+</style>
+<body>
+  <!-- http://www.bootply.com/SyA8I3PXjf-->
+  <div id="navbar-header" class="collapse">
+    <div class="container bg-inverse p-a-1">
+      <h3>Collapsed content</h3>
+      <p>Toggleable via the navbar brand.</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-light navbar-static-top bg-faded">
+    <div class="container">
+      <button type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" class="navbar-toggler hidden-sm-up">☰</button>
+      <div id="exCollapsingNavbar2" class="collapse navbar-toggleable-xs"><a href="/" class="navbar-brand"><img alt="Brand" src="/static/imagina-32.png"/></a>
+        <form action="" class="pull-xs-right">
+          <div class="form-group">
+            <input id="nav-search" name="Search" placeholder="Search" type="text" class="form-control mac-style"/>
+          </div>
+        </form>
+        <ul class="nav navbar-nav pull-xs-right">
+          <li class="nav-item active"><a href="/new" title="add" class="nav-link"><i class="fa fa-plus"></i></a></li>
+          <li style="margin-right: 16px;" class="nav-item active"><a href="/users/login" title="admin" class="nav-link"><i class="fa fa-cog"></i></a></li>
+        </ul>
+        <!--
+        <ul class="nav navbar-nav">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Nav item <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Another nav item</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">More nav</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Last link</a>
+        </li>
+        </ul>
+        -->
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row"><br/>
+      <div class="col-sm-12">
+        <form class="card">
+          <h3 class="card-header card-info">
+            <label for="inputTitle" class="sr-only">Título:</label>
+            <input id="inputTitle" type="text" name="title" placeholder="Inserta título" class="form-control"/>
+          </h3>
+          <div class="card-block">
+            <label for="inputDescription" class="sr-only">Description:</label>
+            <input id="inputDescription" type="text" name="description" placeholder="Inserta descripción" class="form-control"/>
+            <label for="inputTags" class="sr-only">Tags:</label>
+            <input id="inputTags" type="text" name="tags" ,="," placeholder="etiquetas separadas por comas" class="form-control"/>
+            <hr/>
+            <label for="inputStatus" class="sr-only">Select Status:</label>
+            <select id="inputStatus" name="status" class="form-control">
+              <option>Selecciona estado</option>
+              <option>Todo</option>
+              <option>Doing</option>
+              <option>Review</option>
+              <option>Done</option>
+            </select>
+            <hr/>
+            <div class="text-xs-center">
+              <button onclick="history.go(-1)" class="btn btn-imagina">Volver<i style=" position: relative; color: rgb(255, 255, 255); width: 50%;" class="fa fa-arrow-left"></i></button>
+              <div id="save-btn" class="btn btn-imagina">Guardar<i style=" position: relative; color: rgb(255, 255, 255); width: 50%;" class="fa fa-floppy-o"></i></div><a href="/" class="btn btn-danger">Cancelar<i style=" position: relative; color: rgb(255, 255, 255); width: 50%;" class="fa fa-times"></i></a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="added" class="col-sm-12">   </div>
+    </div>
+  </div>
+</body>
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Imagina Formación | 2016</p>
+  </div>
+</footer>
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" crossorigin="anonymous"></script>
+<!-- Bootstrap 3.3.6 JavaScript-->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+<!-- Bootstrap 4.0.0-a2JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+  
+    var $added = $('#added');
+    var $saveBtn = $('#save-btn');
+    var $form = $('form');
+  
+    $saveBtn.click(function(e){
+      var pos = $.ajax({
+        url: 'http://localhost:3000/new',
+        method: "POST",
+        data: $form.serializeArray()
+      })
+      
+      pos.done(function( data ) {
+        $added.append(data)
+        $form.find('input').each(function(){
+          $(this).val(null)
+        });
+        $form.find('select').prop('selectedIndex',0);
+      });
+       
+      pos.fail(function( data ) {
+        console.log(data);
+      });
+  
+    })
+  
+  
+    $('.container').on('click', '#delete-btn', function(){
+      var that = $(this)
+      var data = $(this).data() 
+      var del = $.ajax({
+        url: 'http://localhost:3000/edit/' + data.id,
+        method: "DELETE"
+      })
+  
+      del.done(function( ) {
+        that.closest('.card').remove()
+      });
+       
+      del.fail(function( e ) {
+        alert('Error al borrar')
+      });
+  
+    });
+  
+  
+  });
+</script>

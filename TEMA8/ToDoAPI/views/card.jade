@@ -1,0 +1,20 @@
+.card
+  h3.card-header.card-info {{tarea.title}}
+  .card-block
+    p.card-text {{tarea.description}}
+    div(ng-repeat="TAG in tarea.tags")
+      a.card-link(href='#') {{TAG}}
+    hr
+    p.card-text Creado en: {{tarea.dateCreation} 
+    p.card-text Actualizado en: {{tarea.dateEdition}
+    hr
+    .text-xs-center
+      a.btn.btn-imagina(href='/list')
+        | Volver
+        i.fa.fa-arrow-left
+      a.btn.btn-imagina(href='/edit/{{tarea._id}}')
+        | Editar
+        i.fa.fa-pencil-square-o
+      a#delete-btn.btn.btn-danger(data-id="{{tarea._id}}")
+        | Eliminar
+        i.fa.fa-trash-o

@@ -1,0 +1,19 @@
+
+.row
+.container
+  .card-columns
+
+    div(ng-repeat="tarea in tareas")
+      .card
+        h3.card-header.card-success {{tarea.title}}
+        .card-block
+          p.card-text {{tarea.description}}
+          div(ng-repeat="TAG in tarea.tags")
+            a.card-link(href='#') {{TAG}}
+          hr
+          .text-xs-center
+            a.btn.btn-imagina(href='/view/{{tarea.id}}')
+              | Ver 
+              i.fa.fa-arrow-right(style='color:white;padding-right:16px;')
+//- hr
+//- include footer

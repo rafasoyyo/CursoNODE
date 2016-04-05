@@ -1,0 +1,60 @@
+
+<div class="container">
+  <div class="row"><br/>
+    <div class="col-sm-12">
+      <form action="/edit/{{tarea._id}}" method="POST" class="card">
+        <h3 class="card-header card-info">
+          <label for="inputTitle" class="sr-only">Título:</label>
+          <input id="inputTitle" type="text" name="title" placeholder="{{tarea.title}}" class="form-control"/>
+        </h3>
+        <div class="card-block">
+          <label for="inputDescription" class="sr-only">Description:</label>
+          <input id="inputDescription" type="text" name="description" placeholder="{{tarea.description}}" class="form-control"/>
+          <label for="inputTags" class="sr-only">Tags:</label>
+          <input id="inputTags" type="text" name="tags" placeholder="TAGS" class="form-control"/>
+          <hr/>
+          <label for="inputStatus" class="sr-only">Select Status:</label>
+          <select id="inputStatus" name="status" class="form-control">
+            <option>Todo</option>
+            <option>Doing</option>
+            <option>Review</option>
+            <option>Done</option>
+          </select>
+          <hr/>
+          <p class="card-text">Creado en: {{tarea.dateCreation}}</p>
+          <p class="card-text">Actualizado en: {{tarea.dateEdition}}</p>
+          <hr/>
+          <div class="text-xs-center"><a href="/view/{{tarea._id}}" class="btn btn-imagina">Volver<i class="fa fa-arrow-left"></i></a>
+            <button type="submit" class="btn btn-imagina">Guardar<i style=" position: relative; color: rgb(255, 255, 255); width: 50%;" class="fa fa-pencil-square-o"></i>
+            </button><a id="delete-btn" class="btn btn-danger">Eliminar<i class="fa fa-trash-o"></i></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+  
+  
+    $('#delete-btn').click(function(){
+      var request = $.ajax({
+        url: 'http://localhost:3000/edit/{{tarea._id}}',
+        method: "DELETE"
+      })
+  
+      request.done(function( e ) {
+        console.log(e);
+        location.href = '/list'
+      });
+       
+      request.fail(function( e ) {
+        console.log(e);
+        alert('Error al borrar')
+      });
+  
+    });
+  
+  
+  });
+</script>

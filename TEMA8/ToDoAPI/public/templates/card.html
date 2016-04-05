@@ -1,0 +1,13 @@
+
+<div class="card">
+  <h3 class="card-header card-info">{{tarea.title}}</h3>
+  <div class="card-block">
+    <p class="card-text">{{tarea.description}}</p>
+    <div ng-repeat="TAG in tarea.tags"><a href="#" class="card-link">{{TAG}}</a></div>
+    <hr/>
+    <p class="card-text">Creado en: {{tarea.dateCreation} </p>
+    <p class="card-text">Actualizado en: {{tarea.dateEdition}</p>
+    <hr/>
+    <div class="text-xs-center"><a href="/list" class="btn btn-imagina">Volver<i class="fa fa-arrow-left"></i></a><a href="/edit/{{tarea._id}}" class="btn btn-imagina">Editar<i class="fa fa-pencil-square-o"></i></a><a id="delete-btn" data-id="{{tarea._id}}" class="btn btn-danger">Eliminar<i class="fa fa-trash-o"></i></a></div>
+  </div>
+</div>
