@@ -1,0 +1,20 @@
+{
+  "name": "ejercicio2",
+  "version": "1.0.0",
+  "description": "Ejercicio2 - mocha tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mocha",
+    "tests",
+    "curso"
+  ],
+  "author": "Rafael Hernández Navarro",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "chai": "^3.5.0"
+  }
+}
